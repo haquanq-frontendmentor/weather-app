@@ -7,7 +7,7 @@ import "./style.css";
 const app = createApp(App);
 const pinia = createPinia();
 
-app.use(PrimeVue);
+app.use(PrimeVue, { unstyled: true });
 app.use(pinia);
 
 app.mount("#app");
