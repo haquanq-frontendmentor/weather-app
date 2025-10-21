@@ -5,6 +5,6 @@ import svgLoader from "vite-svg-loader";
 
 // https://vite.dev/config/
 export default defineConfig({
-    plugins: [vue(), svgLoader(), tailwindcss()],
+    plugins: [vue(), svgLoader({ defaultImport: "url" }), tailwindcss()],
     base: "/weather-app",
 });
