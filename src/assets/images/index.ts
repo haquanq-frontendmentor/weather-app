@@ -17,4 +17,5 @@ export { default as StormIcon } from "./icon-storm.webp";
 export { default as SunIcon } from "./icon-sun.svg?component";
 export { default as SunnyIcon } from "./icon-sunny.webp";
 export { default as UnitsIcon } from "./icon-units.svg?component";
-export { default as WeatherLogo } from "./logo.svg?component";
+export { default as WeatherLogoDark } from "./logo-dark.svg";
+export { default as WeatherLogoLight } from "./logo-light.svg";
