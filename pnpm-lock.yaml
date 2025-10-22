@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@tanstack/vue-query':
+        specifier: ^5.90.5
+        version: 5.90.5(vue@3.5.22(typescript@5.9.3))
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      openmeteo:
+        specifier: ^1.2.1
+        version: 1.2.1
       pinia:
         specifier: ^3.0.3
         version: 3.0.3(typescript@5.9.3)(vue@3.5.22(typescript@5.9.3))
@@ -252,6 +258,10 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
+  '@openmeteo/sdk@1.21.2':
+    resolution: {integrity: sha512-AaX53PfPMVAaxdvuthRJePLD46eGYoaGQMEW5A0/xuAjigTQncN4WOhrXlOvg8aG8zfQQVUmhKFDHB/+UCUVoQ==}
+    engines: {node: '>=12.0'}
+
   '@primeuix/styled@0.7.4':
     resolution: {integrity: sha512-QSO/NpOQg8e9BONWRBx9y8VGMCMYz0J/uKfNJEya/RGEu7ARx0oYW0ugI1N3/KB1AAvyGxzKBzGImbwg0KUiOQ==}
     engines: {node: '>=12.11.0'}
@@ -476,6 +486,22 @@ packages:
     peerDependencies:
       vite: ^5.2.0 || ^6 || ^7
 
+  '@tanstack/match-sorter-utils@8.19.4':
+    resolution: {integrity: sha512-Wo1iKt2b9OT7d+YGhvEPD3DXvPv2etTusIMhMUoG7fbhmxcXCtIjJDEygy91Y2JFlwGyjqiBPRozme7UD8hoqg==}
+    engines: {node: '>=12'}
+
+  '@tanstack/query-core@5.90.5':
+    resolution: {integrity: sha512-wLamYp7FaDq6ZnNehypKI5fNvxHPfTYylE0m/ZpuuzJfJqhR5Pxg9gvGBHZx4n7J+V5Rg5mZxHHTlv25Zt5u+w==}
+
+  '@tanstack/vue-query@5.90.5':
+    resolution: {integrity: sha512-bTEmgIb6o5BqkoJPNV7ZKKsDHjiVnNydORw1n6S/x0dppb3lTT5KFOotQ5PqZG3OQY+9AwA6RJJN3pEx+9j1Pg==}
+    peerDependencies:
+      '@vue/composition-api': ^1.1.2
+      vue: ^2.6.0 || ^3.3.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
@@ -513,6 +539,9 @@ packages:
 
   '@vue/compiler-ssr@3.5.22':
     resolution: {integrity: sha512-GdgyLvg4R+7T8Nk2Mlighx7XGxq/fJf9jaVofc3IL0EPesTE86cP/8DD1lT3h1JeZr2ySBvyqKQJgbS54IX1Ww==}
+
+  '@vue/devtools-api@6.6.4':
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
 
   '@vue/devtools-api@7.7.7':
     resolution: {integrity: sha512-lwOnNBH2e7x1fIIbVT7yF5D+YWhqELm55/4ZKf45R9T8r9dE2AIOy8HKjfqzGsoTHFbWbr337O4E0A0QADnjBg==}
@@ -644,6 +673,9 @@ packages:
       picomatch:
         optional: true
 
+  flatbuffers@25.9.23:
+    resolution: {integrity: sha512-MI1qs7Lo4Syw0EOzUl0xjs2lsoeqFku44KpngfIduHBYvzm8h2+7K8YMQh1JtVVVrUvhLpNwqVi4DERegUJhPQ==}
+
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -756,6 +788,10 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
+  openmeteo@1.2.1:
+    resolution: {integrity: sha512-BNps/RuJo0tIWhBiEvThO28Df3pU6q7m77wBhuS74FkvYYmrub9+KqzBiMd6XNPhWL4tPfG0iE3tXREy+pkwiQ==}
+    engines: {node: '>=12.0'}
+
   path-browserify@1.0.1:
     resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
 
@@ -856,6 +892,9 @@ packages:
     resolution: {integrity: sha512-JbHBa5k30pZ7mn/z4vYBOnyt5GrR15eM3X0wa3VanonxnFLYkTEx8OMh33aU6ndWeOfi7Ef57dOL3bTH+3f4hQ==}
     engines: {node: '>=12.11.0'}
 
+  remove-accents@0.5.0:
+    resolution: {integrity: sha512-8g3/Otx1eJaVD12e31UbJj1YzdtVvzH85HV7t+9MJYk/u3XmkOUJ5Ys9wQrf9PCPK8+xn4ymzqYCiZl6QWKn+A==}
+
   rfdc@1.4.1:
     resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
 
@@ -950,6 +989,17 @@ packages:
 
   vscode-uri@3.1.0:
     resolution: {integrity: sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==}
+
+  vue-demi@0.14.10:
+    resolution: {integrity: sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==}
+    engines: {node: '>=12'}
+    hasBin: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
 
   vue-tsc@3.1.1:
     resolution: {integrity: sha512-fyixKxFniOVgn+L/4+g8zCG6dflLLt01Agz9jl3TO45Bgk87NZJRmJVPsiK+ouq3LB91jJCbOV+pDkzYTxbI7A==}
@@ -1076,6 +1126,10 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@openmeteo/sdk@1.21.2':
+    dependencies:
+      flatbuffers: 25.9.23
 
   '@primeuix/styled@0.7.4':
     dependencies:
@@ -1236,6 +1290,20 @@ snapshots:
       tailwindcss: 4.1.15
       vite: 7.1.11(@types/node@24.9.1)(jiti@2.6.1)(lightningcss@1.30.2)
 
+  '@tanstack/match-sorter-utils@8.19.4':
+    dependencies:
+      remove-accents: 0.5.0
+
+  '@tanstack/query-core@5.90.5': {}
+
+  '@tanstack/vue-query@5.90.5(vue@3.5.22(typescript@5.9.3))':
+    dependencies:
+      '@tanstack/match-sorter-utils': 8.19.4
+      '@tanstack/query-core': 5.90.5
+      '@vue/devtools-api': 6.6.4
+      vue: 3.5.22(typescript@5.9.3)
+      vue-demi: 0.14.10(vue@3.5.22(typescript@5.9.3))
+
   '@trysound/sax@0.2.0': {}
 
   '@types/estree@1.0.8': {}
@@ -1291,6 +1359,8 @@ snapshots:
     dependencies:
       '@vue/compiler-dom': 3.5.22
       '@vue/shared': 3.5.22
+
+  '@vue/devtools-api@6.6.4': {}
 
   '@vue/devtools-api@7.7.7':
     dependencies:
@@ -1453,6 +1523,8 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.3
 
+  flatbuffers@25.9.23: {}
+
   fsevents@2.3.3:
     optional: true
 
@@ -1531,6 +1603,11 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
+  openmeteo@1.2.1:
+    dependencies:
+      '@openmeteo/sdk': 1.21.2
+      flatbuffers: 25.9.23
+
   path-browserify@1.0.1: {}
 
   perfect-debounce@1.0.0: {}
@@ -1576,6 +1653,8 @@ snapshots:
       '@primevue/icons': 4.4.1(vue@3.5.22(typescript@5.9.3))
     transitivePeerDependencies:
       - vue
+
+  remove-accents@0.5.0: {}
 
   rfdc@1.4.1: {}
 
@@ -1660,6 +1739,10 @@ snapshots:
       lightningcss: 1.30.2
 
   vscode-uri@3.1.0: {}
+
+  vue-demi@0.14.10(vue@3.5.22(typescript@5.9.3)):
+    dependencies:
+      vue: 3.5.22(typescript@5.9.3)
 
   vue-tsc@3.1.1(typescript@5.9.3):
     dependencies:
