@@ -1,3 +1,4 @@
+import { VueQueryPlugin } from "@tanstack/vue-query";
 import { createPinia } from "pinia";
 import PrimeVue from "primevue/config";
 import { createApp } from "vue";
@@ -9,5 +10,6 @@ const pinia = createPinia();
 
 app.use(PrimeVue, { unstyled: true });
 app.use(pinia);
+app.use(VueQueryPlugin);
 
 app.mount("#app");
