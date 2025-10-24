@@ -40,10 +40,10 @@ const selectedDayIndex = computed(() => sevenDaysFromNow.findIndex((v) => v === 
         }"
       >
         <template #value="slotProps">
-          <p>{{ slotProps.value.toLocaleDateString("en-US", { weekday: "long" }) }}</p>
-          <div
-            class="absolute inset-0 rounded-lg group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-gray-800 dark:group-focus-visible:outline-gray-200"
-          ></div>
+          <span>{{ slotProps.value.toLocaleDateString("en-US", { weekday: "long" }) }}</span>
+          <span
+            class="absolute inset-0 block rounded-lg group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-gray-800 dark:group-focus-visible:outline-gray-200"
+          ></span>
         </template>
         <template #option="slotProps">
           {{ slotProps.option.toLocaleDateString("en-US", { weekday: "long" }) }}
