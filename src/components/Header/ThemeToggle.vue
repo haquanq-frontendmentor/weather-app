@@ -6,7 +6,7 @@ const themeStore = useThemeStore();
 </script>
 
 <template>
-  <Button variant="secondary" square type="button" @click="themeStore.cycleThemes">
+  <Button variant="secondary" square type="button" @click="themeStore.cycleThemes" aria-label="Toggle theme">
     <MoonIcon v-if="themeStore.theme === `dark`" />
     <SunIcon v-if="themeStore.theme === `light`" />
   </Button>
