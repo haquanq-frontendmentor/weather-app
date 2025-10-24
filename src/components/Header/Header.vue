@@ -2,6 +2,7 @@
 import { WeatherLogoDark, WeatherLogoLight } from "../../assets/images";
 import Container from "../../layouts/Container.vue";
 import { useThemeStore } from "../../stores/themeStore";
+import WeatherSetting from "../Weather/Setting/WeatherSetting.vue";
 import ThemeToggle from "./ThemeToggle.vue";
 
 const themeStore = useThemeStore();
@@ -16,7 +17,10 @@ const themeStore = useThemeStore();
           <img :src="WeatherLogoLight" alt="" v-if="themeStore.theme === `light`" />
         </div>
 
-        <ThemeToggle />
+        <div class="flex gap-2 sm:gap-3">
+          <ThemeToggle />
+          <WeatherSetting />
+        </div>
       </div>
     </Container>
   </header>
