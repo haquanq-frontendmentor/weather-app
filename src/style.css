@@ -66,6 +66,10 @@
 
     --color-orange-500: hsl(28, 100%, 52%);
 
+    --color-blue-100: hsl(233, 100%, 97%);
+    --color-blue-200: hsl(233, 80%, 86%);
+    --color-blue-300: hsl(233, 67%, 76%);
+    --color-blue-400: hsl(233, 67%, 66%);
     --color-blue-500: hsl(233, 67%, 56%);
     --color-blue-700: hsl(248, 70%, 36%);
 
