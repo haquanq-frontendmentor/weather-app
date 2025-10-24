@@ -20,6 +20,7 @@ const selectedDayIndex = computed(() => sevenDaysFromNow.findIndex((v) => v === 
       <h2>Hourly forecast</h2>
       <Select
         v-model="selectedDay"
+        aria-label="Select day"
         :options="sevenDaysFromNow"
         :default-value="selectedDay"
         :pt="{
