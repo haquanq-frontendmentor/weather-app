@@ -1,0 +1,15 @@
+{
+  "name": "Weather App",
+  "featured": true,
+  "colors:": {
+    "brand": "#4455DA"
+  },
+  "images": {
+    "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/weather-app/main/docs/preview.jpg"
+  },
+  "frontendmentor": {
+    "difficulty": "intermediate",
+    "challengeUrl": "https://www.frontendmentor.io/challenges/weather-app-K1FhddVm49",
+    "solutionUrl": "https://www.frontendmentor.io/solutions/weather-app-using-un-styled-primevue-vue-tailwindcss-with-themes-hHrLLJlec6"
+  }
+}
